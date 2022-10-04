@@ -1,0 +1,85 @@
+{
+  "name": "orgname",
+  "version": "1.0.0",
+  "packageManager": "pnpm@7.1.0",
+  "main": "./packages/core/dist/index.js",
+  "module": "./packages/core/dist/index.esm.js",
+  "types": "./packages/core/dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    "./core": {
+      "types": "./packages/core/dist/index.d.ts",
+      "import": "./packages/core/dist/index.mjs",
+      "module": "./packages/core/dist/index.esm.js",
+      "require": "./packages/core/dist/index.js"
+    },
+    "./infinite": {
+      "types": "./packages/infinite/dist/index.d.ts",
+      "import": "./packages/infinite/dist/index.mjs",
+      "module": "./packages/infinite/dist/index.esm.js",
+      "require": "./packages/infinite/dist/index.js"
+    },
+    "./immutable": {
+      "types": "./packages/immutable/dist/index.d.ts",
+      "import": "./packages/immutable/dist/index.mjs",
+      "module": "./packages/immutable/dist/index.esm.js",
+      "require": "./packages/immutable/dist/index.js"
+    }
+  },
+  "files": [
+    "core/dist/**/*.{js,d.ts,mjs}",
+    "infinite/dist/**/*.{js,d.ts,mjs}",
+    "immutable/dist/**/*.{js,d.ts,mjs}",
+    "core/package.json",
+    "infinite/package.json",
+    "immutable/package.json"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "csb:install": "pnpm i -g pnpm@7",
+    "csb:build": "pnpm install && pnpm build",
+    "clean": "pnpm -r run clean",
+    "watch": "pnpm -r run watch",
+    "build": "pnpm -r run build",
+    "types:check": "pnpm -r run types:check",
+    "prepublishOnly": "pnpm clean && pnpm build",
+    "publish-beta": "pnpm publish --tag beta",
+    "format": "prettier --write ./**/*.{ts,tsx}",
+    "lint": "eslint . --ext .ts,.tsx --cache",
+    "lint:fix": "pnpm lint --fix"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix --cache",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.14",
+    "@types/react": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "5.36.1",
+    "@typescript-eslint/parser": "5.36.1",
+    "bunchee": "2.1.1",
+    "eslint": "8.15.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-jest-dom": "4.0.1",
+    "eslint-plugin-react": "7.30.0",
+    "eslint-plugin-react-hooks": "4.5.0",
+    "eslint-plugin-testing-library": "5.5.0",
+    "prettier": "2.6.2",
+    "rimraf": "3.0.2",
+    "tslib": "2.4.0",
+    "typescript": "4.8.2"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": false,
+    "useTabs": false,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "trailingComma": "none"
+  },
+  "engines": {
+    "pnpm": "7"
+  }
+}
