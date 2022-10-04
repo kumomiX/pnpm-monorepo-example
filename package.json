@@ -1,8 +1,7 @@
 {
   "name": "kumomix",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "packageManager": "pnpm@7.1.0",
-  "private": "true",
   "exports": {
     ".": {
       "types": "./ui-kit/core/dist/index.d.ts",
