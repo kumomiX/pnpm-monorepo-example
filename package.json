@@ -1,40 +1,40 @@
 {
   "name": "kumomix",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "packageManager": "pnpm@7.1.0",
   "exports": {
     ".": {
-      "types": "./packages/ui-kit/core/dist/index.d.ts",
-      "import": "./packages/ui-kit/core/dist/index.mjs",
-      "module": "./packages/ui-kit/core/dist/index.esm.js",
-      "require": "./packages/ui-kit/core/dist/index.js"
+      "types": "./ui-kit/core/dist/index.d.ts",
+      "import": "./ui-kit/core/dist/index.mjs",
+      "module": "./ui-kit/core/dist/index.esm.js",
+      "require": "./ui-kit/core/dist/index.js"
     },
     "./core": {
-      "types": "./packages/ui-kit/core/dist/index.d.ts",
-      "import": "./packages/ui-kit/core/dist/index.mjs",
-      "module": "./packages/ui-kit/core/dist/index.esm.js",
-      "require": "./packages/ui-kit/core/dist/index.js"
+      "types": "./ui-kit/core/dist/index.d.ts",
+      "import": "./ui-kit/core/dist/index.mjs",
+      "module": "./ui-kit/core/dist/index.esm.js",
+      "require": "./ui-kit/core/dist/index.js"
     },
     "./infinite": {
-      "types": "./packages/ui-kit/infinite/dist/index.d.ts",
-      "import": "./packages/ui-kit/infinite/dist/index.mjs",
-      "module": "./packages/ui-kit/infinite/dist/index.esm.js",
-      "require": "./packages/ui-kit/infinite/dist/index.js"
+      "types": "./ui-kit/infinite/dist/index.d.ts",
+      "import": "./ui-kit/infinite/dist/index.mjs",
+      "module": "./ui-kit/infinite/dist/index.esm.js",
+      "require": "./ui-kit/infinite/dist/index.js"
     },
     "./immutable": {
-      "types": "./packages/ui-kit/immutable/dist/index.d.ts",
-      "import": "./packages/ui-kit/immutable/dist/index.mjs",
-      "module": "./packages/ui-kit/immutable/dist/index.esm.js",
-      "require": "./packages/ui-kit/immutable/dist/index.js"
+      "types": "./ui-kit/immutable/dist/index.d.ts",
+      "import": "./ui-kit/immutable/dist/index.mjs",
+      "module": "./ui-kit/immutable/dist/index.esm.js",
+      "require": "./ui-kit/immutable/dist/index.js"
     }
   },
   "files": [
-    "packages/ui-kit/core/dist/**/*.{js,d.ts,mjs}",
-    "packages/ui-kit/infinite/dist/**/*.{js,d.ts,mjs}",
-    "packages/ui-kit/immutable/dist/**/*.{js,d.ts,mjs}",
-    "packages/ui-kit/core/package.json",
-    "packages/ui-kit/infinite/package.json",
-    "packages/ui-kit/immutable/package.json"
+    "ui-kit/core/dist/**/*.{js,d.ts,mjs}",
+    "ui-kit/infinite/dist/**/*.{js,d.ts,mjs}",
+    "ui-kit/immutable/dist/**/*.{js,d.ts,mjs}",
+    "ui-kit/core/package.json",
+    "ui-kit/infinite/package.json",
+    "ui-kit/immutable/package.json"
   ],
   "license": "MIT",
   "scripts": {
