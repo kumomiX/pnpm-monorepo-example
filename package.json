@@ -1,6 +1,6 @@
 {
   "name": "kumomix",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "packageManager": "pnpm@7.1.0",
   "main": "./packages/ui-kit/core/dist/index.js",
   "module": "./packages/ui-kit/core/dist/index.esm.js",
@@ -34,7 +34,10 @@
   "files": [
     "packages/ui-kit/core/dist/**/*.{js,d.ts,mjs}",
     "packages/ui-kit/infinite/dist/**/*.{js,d.ts,mjs}",
-    "packages/ui-kit/immutable/dist/**/*.{js,d.ts,mjs}"
+    "packages/ui-kit/immutable/dist/**/*.{js,d.ts,mjs}",
+    "packages/ui-kit/core/package.json",
+    "packages/ui-kit/infinite/package.json",
+    "packages/ui-kit/immutable/package.json"
   ],
   "license": "MIT",
   "scripts": {
