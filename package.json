@@ -1,7 +1,10 @@
 {
   "name": "kumomix",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "packageManager": "pnpm@7.1.0",
+  "main": "./ui-kit/core/dist/index.js",
+  "module": "./ui-kit/core/dist/index.esm.js",
+  "types": "./ui-kit/core/dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./ui-kit/core/dist/index.d.ts",
