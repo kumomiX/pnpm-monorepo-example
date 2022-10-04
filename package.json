@@ -2,28 +2,28 @@
   "name": "kumomix",
   "version": "1.0.0",
   "packageManager": "pnpm@7.1.0",
-  "main": "./packages/core/dist/index.js",
-  "module": "./packages/core/dist/index.esm.js",
-  "types": "./packages/core/dist/index.d.ts",
+  "main": "./packages/ui-kit/core/dist/index.js",
+  "module": "./packages/ui-kit/core/dist/index.esm.js",
+  "types": "./packages/ui-kit/core/dist/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
     "./core": {
-      "types": "./packages/core/dist/index.d.ts",
-      "import": "./packages/core/dist/index.mjs",
-      "module": "./packages/core/dist/index.esm.js",
-      "require": "./packages/core/dist/index.js"
+      "types": "./packages/ui-kit/core/dist/index.d.ts",
+      "import": "./packages/ui-kit/core/dist/index.mjs",
+      "module": "./packages/ui-kit/core/dist/index.esm.js",
+      "require": "./packages/ui-kit/core/dist/index.js"
     },
     "./infinite": {
-      "types": "./packages/infinite/dist/index.d.ts",
-      "import": "./packages/infinite/dist/index.mjs",
-      "module": "./packages/infinite/dist/index.esm.js",
-      "require": "./packages/infinite/dist/index.js"
+      "types": "./packages/ui-kit/infinite/dist/index.d.ts",
+      "import": "./packages/ui-kit/infinite/dist/index.mjs",
+      "module": "./packages/ui-kit/infinite/dist/index.esm.js",
+      "require": "./packages/ui-kit/infinite/dist/index.js"
     },
     "./immutable": {
-      "types": "./packages/immutable/dist/index.d.ts",
-      "import": "./packages/immutable/dist/index.mjs",
-      "module": "./packages/immutable/dist/index.esm.js",
-      "require": "./packages/immutable/dist/index.js"
+      "types": "./packages/ui-kit/immutable/dist/index.d.ts",
+      "import": "./packages/ui-kit/immutable/dist/index.mjs",
+      "module": "./packages/ui-kit/immutable/dist/index.esm.js",
+      "require": "./packages/ui-kit/immutable/dist/index.js"
     }
   },
   "files": [
