@@ -1,5 +1,5 @@
 {
-  "name": "@kumomiX",
+  "name": "kumomix",
   "version": "1.0.0",
   "packageManager": "pnpm@7.1.0",
   "main": "./packages/core/dist/index.js",
