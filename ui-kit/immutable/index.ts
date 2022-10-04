@@ -1,4 +1,4 @@
-import { getCoreText } from 'ui-kit'
+import { getCoreText } from 'ui-kit/core'
 
 const getImmutableText = () => {
   const coreText = getCoreText()

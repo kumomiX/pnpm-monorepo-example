@@ -1,4 +1,4 @@
-import { getCoreText } from 'ui-kit'
+import { getCoreText } from 'ui-kit/core'
 import { getImmutableText } from 'ui-kit/immutable'
 
 export const getInfiniteText = () => {

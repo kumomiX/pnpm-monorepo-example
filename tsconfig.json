@@ -16,10 +16,10 @@
     "rootDir": "./",
     "strict": true,
     "target": "es5",
-    "baseUrl": "./packages",
+    "baseUrl": ".",
     "noEmitOnError": true,
     "paths": {
-      "ui-kit": ["./ui-kit/core/index.ts"],
+      "ui-kit/core": ["./ui-kit/core/index.ts"],
       "ui-kit/infinite": ["./ui-kit/infinite/index.ts"],
       "ui-kit/immutable": ["./ui-kit/immutable/index.ts"]
     },

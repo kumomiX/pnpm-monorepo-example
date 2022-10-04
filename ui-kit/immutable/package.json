@@ -11,7 +11,7 @@
     "clean": "rimraf dist"
   },
   "peerDependencies": {
-    "ui-kit": "*",
+    "ui-kit/core": "*",
     "react": "*"
   }
 }
