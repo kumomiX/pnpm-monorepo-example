@@ -21,7 +21,7 @@ To generate a new changeset, run `pnpm changeset` in the root of the repository.
 
 ```
 @kumomiX:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=${GITHUN_AUTH_TOKEN}
+//npm.pkg.github.com/:_authToken=${GITHUB_AUTH_TOKEN}
 ```
 
 2. Run `pnpm i @kumomix/ui-kit-core`.
