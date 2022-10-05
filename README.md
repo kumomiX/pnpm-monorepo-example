@@ -24,4 +24,4 @@ To generate a new changeset, run `pnpm changeset` in the root of the repository.
 //npm.pkg.github.com/:_authToken=${GITHUB_AUTH_TOKEN}
 ```
 
-2. Run `pnpm i @kumomix/ui-kit-core`.
+2. Run `pnpm i @kumomix/ui-kit-a`.
