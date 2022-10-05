@@ -1,29 +1,20 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
     "declaration": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "lib": ["esnext", "dom"],
-    "module": "NodeNext",
-    "moduleResolution": "nodenext",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strictBindCallApply": true,
-    "downlevelIteration": true,
-    "outDir": "./dist",
-    "rootDir": "./",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
     "strict": true,
-    "target": "es5",
-    "baseUrl": ".",
-    "noEmitOnError": true,
-    "paths": {
-      "ui-kit/core": ["./ui-kit/core/index.ts"],
-      "ui-kit/infinite": ["./ui-kit/infinite/index.ts"],
-      "ui-kit/immutable": ["./ui-kit/immutable/index.ts"]
-    },
-    "incremental": true
+    "isolatedModules": true,
+    "noFallthroughCasesInSwitch": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true
   },
   "exclude": ["./**/dist", "examples", "**/node_modules"],
   "watchOptions": {

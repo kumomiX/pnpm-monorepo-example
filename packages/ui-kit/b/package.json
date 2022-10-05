@@ -1,26 +1,30 @@
 {
-  "name": "@kumomix/ui-kit-core",
+  "name": "@kumomix/ui-kit-b",
   "license": "MIT",
   "version": "1.0.0",
   "main": "./dist/index.js",
-  "module": "./dist/index.esm.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "./dist/**/*.{js,d.ts,mjs}",
     "./package.json"
   ],
-  ".": {
-    "types": "./dist/index.d.ts",
-    "import": "./dist/index.mjs",
-    "module": "./dist/index.esm.js",
-    "require": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
     "./package.json": "./package.json"
   },
   "scripts": {
-    "watch": "bunchee ./src/index.ts -w",
-    "build": "bunchee ./src/index.ts",
+    "watch": "tsup --watch",
+    "build": "tsup",
     "types:check": "tsc --noEmit",
     "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@kumomix/ui-kit-a": "workspace:*"
   },
   "peerDependencies": {
     "react": ">=18"
