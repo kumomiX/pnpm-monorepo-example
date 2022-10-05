@@ -1,3 +1,3 @@
-const getCoreText = () => 'core text' as const
+const getCoreText = () => 'core text new' as const
 
 export { getCoreText }

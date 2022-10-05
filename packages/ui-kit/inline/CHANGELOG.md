@@ -1,5 +1,12 @@
 # @kumomix/ui-kit-inline
 
+## 0.1.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @kumomix/ui-kit-core@1.0.0
+
 ## 0.1.0
 
 ### Minor Changes
