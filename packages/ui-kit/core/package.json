@@ -1,0 +1,32 @@
+{
+  "name": "@kumomix/ui-kit-core",
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist/**/*.{js,d.ts,mjs}",
+    "./package.json"
+  ],
+  ".": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.mjs",
+    "module": "./dist/index.esm.js",
+    "require": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "watch": "bunchee ./src/index.ts -w",
+    "build": "bunchee ./src/index.ts",
+    "types:check": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}

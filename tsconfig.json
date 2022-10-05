@@ -25,7 +25,7 @@
     },
     "incremental": true
   },
-  "exclude": ["./**/dist", "examples"],
+  "exclude": ["./**/dist", "examples", "**/node_modules"],
   "watchOptions": {
     "watchFile": "useFsEvents",
     "watchDirectory": "useFsEvents",

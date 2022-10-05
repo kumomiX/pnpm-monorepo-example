@@ -1,45 +1,8 @@
 {
   "name": "kumomix",
-  "version": "1.0.9",
-  "packageManager": "pnpm@7.1.0",
-  "main": "./ui-kit/core/dist/index.js",
-  "module": "./ui-kit/core/dist/index.esm.js",
-  "types": "./ui-kit/core/dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./ui-kit/core/dist/index.d.ts",
-      "import": "./ui-kit/core/dist/index.mjs",
-      "module": "./ui-kit/core/dist/index.esm.js",
-      "require": "./ui-kit/core/dist/index.js"
-    },
-    "./core": {
-      "types": "./ui-kit/core/dist/index.d.ts",
-      "import": "./ui-kit/core/dist/index.mjs",
-      "module": "./ui-kit/core/dist/index.esm.js",
-      "require": "./ui-kit/core/dist/index.js"
-    },
-    "./infinite": {
-      "types": "./ui-kit/infinite/dist/index.d.ts",
-      "import": "./ui-kit/infinite/dist/index.mjs",
-      "module": "./ui-kit/infinite/dist/index.esm.js",
-      "require": "./ui-kit/infinite/dist/index.js"
-    },
-    "./immutable": {
-      "types": "./ui-kit/immutable/dist/index.d.ts",
-      "import": "./ui-kit/immutable/dist/index.mjs",
-      "module": "./ui-kit/immutable/dist/index.esm.js",
-      "require": "./ui-kit/immutable/dist/index.js"
-    }
-  },
-  "files": [
-    "ui-kit/core/dist/**/*.{js,d.ts,mjs}",
-    "ui-kit/infinite/dist/**/*.{js,d.ts,mjs}",
-    "ui-kit/immutable/dist/**/*.{js,d.ts,mjs}",
-    "ui-kit/core/package.json",
-    "ui-kit/infinite/package.json",
-    "ui-kit/immutable/package.json"
-  ],
+  "private": true,
   "license": "MIT",
+  "packageManager": "pnpm@7.1.0",
   "scripts": {
     "csb:install": "pnpm i -g pnpm@7",
     "csb:build": "pnpm install && pnpm build",
@@ -47,11 +10,13 @@
     "watch": "pnpm -r run watch",
     "build": "pnpm -r run build",
     "types:check": "pnpm -r run types:check",
-    "prepublishOnly": "pnpm clean && pnpm build",
-    "publish-beta": "pnpm publish --tag beta",
     "format": "prettier --write ./**/*.{ts,tsx}",
-    "lint": "eslint . --ext .ts,.tsx --cache",
-    "lint:fix": "pnpm lint --fix"
+    "lint": "eslint packages/**/**/src --ext .ts,.tsx --cache",
+    "lint:fix": "pnpm lint --fix",
+    "version": "changeset version",
+    "release": "changeset publish",
+    "prepublishOnly": "pnpm -r run clean && pnpm -r run build",
+    "publish": "pnpm -r publish"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -60,6 +25,7 @@
     ]
   },
   "devDependencies": {
+    "@changesets/cli": "^2.25.0",
     "@types/node": "^18.7.14",
     "@types/react": "^18.0.9",
     "@typescript-eslint/eslint-plugin": "5.36.1",
@@ -84,7 +50,14 @@
     "arrowParens": "avoid",
     "trailingComma": "none"
   },
+  "pnpm": {
+    "overrides": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    }
+  },
   "engines": {
-    "pnpm": "7"
+    "pnpm": "7",
+    "node": "16.x"
   }
 }
